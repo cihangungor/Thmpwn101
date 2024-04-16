@@ -52,3 +52,4 @@ for i in range(100):
 # Print and close
 info(flag)
           
+#TÜM KORUMALAR AÇIK
