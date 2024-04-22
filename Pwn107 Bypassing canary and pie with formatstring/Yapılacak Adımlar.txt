@@ -176,7 +176,7 @@ pwndbg>
 
 5. Yukarıda offset 0x992 olarak bulundu.
 6. Şimdi sıra stack canary leak bulmakta.
-7. Canary adresinin sonu 00 ile bitermiş. Fuzz ile 13. buldu.
+7. Canary adresinin sonu 00 ile bitermiş ve ff veya f7 ile başlamayacak.. Fuzz ile 13. buldu.
 └─$ python3 fuzz.py                         
     13: b'0xd6b190b256ee5f00\n'
 8. Geriye exploit.py'e bulduğumuz bu leakleri yazıp çalıştırmak kaldı.
